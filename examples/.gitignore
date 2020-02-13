@@ -44,3 +44,8 @@ imgui.ini
 ## JetBrains IDEs
 .idea
 cmake-build-*
+
+## Files excluded in fork
+example_*
+libs
+*.sln
