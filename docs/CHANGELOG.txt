@@ -105,6 +105,9 @@ Other changes:
 
 Breaking Changes:
 
+- Removed unncessary ID (first arg) of ImFontAtlas::AddCustomRectRegular() function. Please
+  note that this is a Beta api and will likely be reworked to support multi-monitor multi-DPI.
+
 Other Changes:
 
 - TreeNode: Fixed bug where BeginDragDropSource() failed when the _OpenOnDoubleClick flag is
@@ -113,6 +116,8 @@ Other Changes:
 - TreeNode: Fixed bug where dragging a payload over a TreeNode() with either _OpenOnDoubleClick
   or _OpenOnArrow would open the node. (#143)
 - Backends: Win32: Support for #define NOGDI, won't try to call GetDeviceCaps(). (#3137, #2327)
+- Backends: OpenGL: Fixed handling of GL 4.5+ glClipControl(GL_UPPER_LEFT) by inverting the
+  projection matrix top and bottom values. (#3143, #3146) [@u3shit]
 
 
 -----------------------------------------------------------------------
